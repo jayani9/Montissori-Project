@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import Grass from "./Grass"; // Make sure the Grass component is in the same folder
 
 // Asset placeholders - replace with your actual paths
-import skybackground from "../assets/hero.jpg";
-import sun from "../assets/sun.png";
-import cloud1 from "../assets/cloud1.png";
-import cloud2 from "../assets/cloud2.png";
-import cloud3 from "../assets/cloud3.png";
+import skybackground from "./../../assets/hero.jpg";
+import sun from "./../../assets/sun.png";
+import cloud1 from "./../../assets/cloud1.png";
+import cloud2 from "./../../assets/cloud2.png";
+import cloud3 from "./../../assets/cloud3.png";
 
 const Hero = () => {
   const [windowWidth, setWindowWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 1200);

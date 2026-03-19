@@ -1,50 +1,31 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";/* 
-import { Navbar } from "./components/navbar/Navbar"; */
-/* import Home from "./pages/Home";
-import Activities from "./pages/Activities"; */
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import About from "./pages/About";
-import Features from "./components/Features";
-import Hero from "./components/Hero";
+// Components
 import Navbar from "./components/Navbar";
-
-// A Home component to group your landing page sections
-const Home = () => (
-  <>
-    <Hero />
-    <Features />
-    <About />
-  </>
-);
+import Home from "./pages/Home";
+import About from "./components/home/About";
 
 function App() {
   return (
     <Router>
-      <div style={{ position: "relative", minHeight: "100vh" }}>
-        {/* <Navbar /> */}
-        {/* <main style={{ marginLeft: 0 }} className="p-6">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/activities" element={<Activities />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main> */}
-        <div className="absolute z-50 w-full">
+      <div className="relative min-h-screen">
+        {/* Navigation Bar sits on top of all pages */}
+        <div className="absolute top-0 z-50 w-full">
           <Navbar />
         </div>
-        {/* <Hero />
-        <Features />
-        <About /> */}
+
+        {/* Main Content Area */}
         <main>
           <Routes>
-            {/* The landing page shows Hero, Features, and About */}
+            {/* Landing Page (contains Hero, Features, and any other homepage sections) */}
             <Route path="/" element={<Home />} />
             
-            {/* Other routes - these will render on a clean page */}
+            {/* Sub-pages */}
             <Route path="/pedagogiikka" element={<About />} /> 
-            <Route path="/toiminta" element={<Features />} />
-            {/* Add more routes as you create pages */}
+            
+            {/* Add more routes here as you build new pages */}
+            {/* <Route path="/toiminta" element={<FeaturesPage />} /> */}
           </Routes>
         </main>
       </div>
