@@ -32,7 +32,7 @@ const Hero = () => {
       <motion.img
         src={sun}
         alt="Sun"
-        className="absolute top-12 right-[10%] w-48 md:w-64 lg:w-80 z-50"
+        className="absolute top-12 right-[10%] w-48 md:w-64 lg:w-80 z-10"
         animate={{
           y: [0, -30, 0],
           rotate: [0, 5, 0],
