@@ -1,6 +1,3 @@
-import React from "react";
-
-// Local asset imports
 import img1 from "./../../assets/features_images/img1.jpg";
 import img2 from "./../../assets/features_images/img2.jpg";
 import img3 from "./../../assets/features_images/img3.jpg";
