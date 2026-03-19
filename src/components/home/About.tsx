@@ -1,5 +1,5 @@
-import React from "react";
-import img1 from "./../../assets/about_images/img1.svg";
+
+import img1 from "./../../assets/about_images/img1.png";
 import img2 from "./../../assets/about_images/img2.png";
 import img3 from "./../../assets/about_images/img3.png";
 import img4 from "./../../assets/about_images/img4.png";
@@ -85,6 +85,12 @@ const About = () => {
         }}
       >
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          
+          <img
+            src={img1}
+            className="inset-0 object-cover  w-[360px] h-auto transform md:rotate-2 hover:rotate-0 transition-transform duration-500  overflow-hidden"
+            alt="Finnish Landscape"
+          />
           <div className="flex-1">
             <h2 className="text-4xl font-bold text-white mb-6">
               Herkkyyskaudet
@@ -94,12 +100,8 @@ const About = () => {
             </p>
           </div>
 
-          {/* Montessori material image container */}
-          <img
-            src={img1}
-            className="inset-0 object-cover  w-[360px] h-auto"
-            alt="Finnish Landscape"
-          />
+          
+          
         </div>
       </section>
       <section
@@ -124,7 +126,7 @@ const About = () => {
 
       {/* SECTION 4 */}
       <section
-        className="relative bg-[#f39c12] text-white py-32 px-12 md:px-24" // Added extra horizontal padding
+        className="relative bg-[#f39c12] text-white py-32 px-12 md:px-24 z-20"
         style={{
           /* Same unique point-down path */
           clipPath: "polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%)",
@@ -162,7 +164,7 @@ const About = () => {
         </div>
       </section>
       <section
-        className="relative text-gray-700 py-32 px-12 md:px-24" // Added extra horizontal padding
+        className="relative  text-gray-700 py-32 px-12 md:px-24 z-10"
         style={{
           /* Same unique point-down path */
           clipPath: "polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%)",

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
@@ -6,6 +6,11 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./components/home/About";
 import { Footer } from "./components/Footer";
+
+
+
+
+
 
 function App() {
   return (
