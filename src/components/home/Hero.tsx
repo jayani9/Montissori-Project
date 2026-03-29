@@ -1,15 +1,22 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Grass from "./Grass"; // Make sure the Grass component is in the same folder
+import Grass from "./Grass";
+import { useLanguage } from "../../context/LanguageContext";
+import translationsData from "../../data/translations.json";
 
-// Asset placeholders - replace with your actual paths
+// Assets
 import skybackground from "./../../assets/hero.jpg";
 import sun from "./../../assets/sun.png";
 import cloud1 from "./../../assets/cloud1.png";
 import cloud2 from "./../../assets/cloud2.png";
 import cloud3 from "./../../assets/cloud3.png";
 
+const translations = translationsData as any;
+
 const Hero = () => {
+  const { lang } = useLanguage();
+  const t = translations[lang]?.hero;
+  
   const [windowWidth, setWindowWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 1200);
 
   useEffect(() => {
@@ -18,6 +25,8 @@ const Hero = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  if (!t) return null;
+
   return (
     <section className="relative h-[85vh] w-full flex items-center overflow-hidden bg-sky-200">
       
@@ -25,7 +34,7 @@ const Hero = () => {
       <img
         src={skybackground}
         className="absolute inset-0 w-full h-full object-cover opacity-60"
-        alt="Finnish Landscape"
+        alt="Background"
       />
 
       {/* ☀️ Animated Sun */}
@@ -45,7 +54,7 @@ const Hero = () => {
         }}
       />
 
-      {/* ☁️ Cloud Layer 1: Slow Left to Right */}
+      {/* ☁️ Clouds */}
       {[0, 12].map((delay, i) => (
         <motion.img
           key={"cloud-lr-" + i}
@@ -53,53 +62,15 @@ const Hero = () => {
           className="absolute top-[10%] w-40 md:w-60 opacity-80 z-10"
           initial={{ x: -400 }}
           animate={{ x: windowWidth + 400 }}
-          transition={{
-            duration: 35,
-            delay,
-            repeat: Infinity,
-            ease: "linear",
-          }}
+          transition={{ duration: 35, delay, repeat: Infinity, ease: "linear" }}
         />
       ))}
 
-      {/* ☁️ Cloud Layer 2: Faster Right to Left */}
-      {[5, 20].map((delay, i) => (
-        <motion.img
-          key={"cloud-rl-" + i}
-          src={cloud2}
-          className="absolute top-[25%] w-48 md:w-72 opacity-70 z-10"
-          initial={{ x: windowWidth + 400 }}
-          animate={{ x: -400 }}
-          transition={{
-            duration: 45,
-            delay,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-      ))}
-
-      {/* ☁️ Cloud Layer 3: Floating Middle */}
-      <motion.img
-        src={cloud3}
-        className="absolute top-[40%] left-[20%] w-32 md:w-44 opacity-60 z-10"
-        animate={{
-          x: [0, 50, 0],
-          y: [0, -20, 0],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* 🌿 The Interactive Grass Layer (GSAP) */}
+      {/* 🌿 Grass Layer */}
       <div className="absolute bottom-2 left-0 w-full z-30">
         <Grass />
       </div>
 
-      {/* 🌑 Subtle Gradient Overlay for Text Readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-transparent z-20"></div>
 
       {/* 🖋️ Main Content Area */}
@@ -111,12 +82,12 @@ const Hero = () => {
           className="max-w-2xl"
         >
           <h1 className="text-5xl md:text-7xl font-bold leading-tight drop-shadow-lg text-white mb-6">
-            <span className="text-orange-400">Pedagogiikka</span> <br /> 
-            <span className="italic font-light">Pedagogy</span>
+            <span className="text-orange-400">{t.titlePart1}</span> <br /> 
+            <span className="italic font-light">{t.titlePart2}</span>
           </h1>
           
           <p className="text-white text-lg md:text-xl mb-8 font-medium bg-black/10 backdrop-blur-sm p-4 rounded-lg inline-block">
-            Oppimisen iloa luonnollisessa ympäristössä.
+            {t.subtitle}
           </p>
 
           <div className="flex gap-4">
@@ -126,9 +97,8 @@ const Hero = () => {
               className="relative group overflow-hidden bg-orange-500 text-white px-10 py-4 rounded-2xl text-xl font-bold shadow-2xl transition-all"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Lue lisää <span className="text-2xl">→</span>
+                {t.button} <span className="text-2xl">→</span>
               </span>
-              {/* Organic "Blob" Hover Effect */}
               <div className="absolute inset-0 bg-orange-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </motion.button>
           </div>
