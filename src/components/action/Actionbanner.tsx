@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "./../../context/LanguageContext";
+import translationsData from "./../../data/translations.json";
 import heroImg from "./../../assets/action_images/banner.jpg";
 
+// Type assertion for TypeScript
+const translations = translationsData as any;
+
 export default function Actionbanner() {
+  const { lang } = useLanguage();
+  
+  // Access the action translations
+  const t = translations[lang]?.action;
+
+  // Safety return if translation data is missing
+  if (!t) return null;
+
   return (
     <div 
       className="relative w-full h-[250px] md:h-[400px] flex items-center justify-center overflow-hidden"
@@ -22,10 +35,10 @@ export default function Actionbanner() {
         className="relative z-10 text-center px-4"
       >
         <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg uppercase tracking-wider">
-          Toiminta
+          {t.title}
         </h1>
         <p className="mt-3 text-white text-lg md:text-2xl font-medium drop-shadow-md">
-          Oppimisen iloa, itsenäisyyttä ja kunnioitusta.
+          {t.subtitle}
         </p>
       </motion.div>
     </div>
