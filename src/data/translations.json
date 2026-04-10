@@ -143,6 +143,8 @@
             }
         },
         "contact": {
+            "title": "Yhteystiedot",
+            "subtitle": "Ota yhteyttä!",
             "pedagogy": {
                 "text": "Montessoripedagogiikka on aatteellisesti sitoutumaton kasvatusmenetelmä, joka perustuu italialaisen pedagogin ja lääkärin Maria Montessorin (1870-1952) luomaan kasvatusajatteluun. Montessorimenetelmää käytetään kouluissa ja päiväkodeissa ympäri maailmaa."
             },
@@ -183,6 +185,16 @@
                 "success": "Viesti lähetetty!",
                 "error": "Virhe lähetyksessä."
             }
+        },
+        "association": {
+            "title": "Yhdistys",
+            "subtitle": "Keravan Montessoripäiväkodin kannatusyhdistys",
+            "historyTitle": "Historia",
+            "historyText": "Keravan Montessoripäiväkodin kannatusyhdistys ry on perustettu vuonna 1984. Toimintansa päiväkoti aloitti syksyllä 1986 leikkikoulumuotoisena. Kokopäiväinen päiväkotitoiminta alkoi syksyllä 1999.",
+            "managementTitle": "Hallitus ja hallinto",
+            "managementText": "Yhdistyksen asioita hoitaa lasten vanhemmista koostuva hallitus, joka toimii yhteistyössä päiväkodin henkilöstön kanssa. Hallitukseen kuuluu puheenjohtajan lisäksi viisi jäsentä sekä kaksi varajäsentä. Hallitus ohjaa ja valvoo päiväkodin toimintaa ja suunnittelee yhteistä toimintaa lasten hyväksi.",
+            "chairmanLabel": "Hallituksen puheenjohtaja",
+            "chairmanName": "Veera Mokkila"
         },
         "footer": {
             "title": "Yhteystiedot",
@@ -340,6 +352,8 @@
             }
         },
         "contact": {
+            "title": "Contact Information",
+            "subtitle": "Get in touch!",
             "pedagogy": {
                 "text": "Montessori pedagogy is an ideologically independent educational method based on the educational thinking created by the Italian pedagogue and physician Maria Montessori (1870-1952). The Montessori method is used in schools and kindergartens around the world."
             },
@@ -380,6 +394,16 @@
                 "success": "Message sent!",
                 "error": "Error sending message."
             }
+        },
+        "association": {
+            "title": "Association",
+            "subtitle": "Kerava Montessori Daycare Support Association",
+            "historyTitle": "History",
+            "historyText": "The Kerava Montessori Daycare Support Association was established in 1984. The daycare began its operations in the fall of 1986 as a kindergarten-style facility. Full-day daycare activities started in the fall of 1999.",
+            "managementTitle": "Board and Management",
+            "managementText": "The affairs of the association are managed by a board consisting of parents of the children attending the daycare, which collaborates with the daycare’s staff. The board includes a chairman, five members, and two alternate members. The board guides and supervises the daycare’s operations and plans activities for the benefit of the children.",
+            "chairmanLabel": "Chairman of the Board",
+            "chairmanName": "Veera Mokkila"
         },
         "footer": {
             "title": "Contact Details",

@@ -1,5 +1,8 @@
 import { useLanguage } from "./../../context/LanguageContext";
 import translationsData from "./../../data/translations.json";
+import img1 from "./../../assets/contact_images/img1.jpg";
+import img2 from "./../../assets/contact_images/img2.jpg";
+import img3 from "./../../assets/contact_images/img3.jpg";
 
 const translations = translationsData as any;
 
@@ -7,7 +10,7 @@ export default function PedagogyHero() {
   const { lang } = useLanguage();
   const t = translations[lang]?.contact?.pedagogy;
 
-  const images = ["/assets/child1.jpg", "/assets/child2.jpg", "/assets/child3.jpg"];
+  const images = [img1, img2, img3];
 
   return (
     <div className="relative pt-24 pb-16 bg-white overflow-hidden">

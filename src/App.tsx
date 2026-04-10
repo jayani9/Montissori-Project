@@ -9,6 +9,7 @@ import Education from './components/education/ApplicationForm'
 import Action from "./components/action/Action";
 import Contact from "./components/contact/Contact";
 import Email from "./components/education/EmailTest";
+import Association from "./components/association/Association";
 import Navbarmobile from './components/mobile-navbar/Mobilenavbar'
 import { Footer } from "./components/Footer";
 import { LanguageProvider } from "./context/LanguageContext";
@@ -46,6 +47,7 @@ function App() {
               <Route path="/pedagogiikka" element={<About />} />
               <Route path="/action" element={<Action />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/association" element={<Association />} />
 
               {/* Add more routes here as you build new pages */}
               {/* <Route path="/toiminta" element={<FeaturesPage />} /> */}
