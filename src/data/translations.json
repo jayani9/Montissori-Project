@@ -142,6 +142,48 @@
                 "prev": "← Edellinen"
             }
         },
+        "contact": {
+            "pedagogy": {
+                "text": "Montessoripedagogiikka on aatteellisesti sitoutumaton kasvatusmenetelmä, joka perustuu italialaisen pedagogin ja lääkärin Maria Montessorin (1870-1952) luomaan kasvatusajatteluun. Montessorimenetelmää käytetään kouluissa ja päiväkodeissa ympäri maailmaa."
+            },
+            "staff": {
+                "title": "Henkilökunta",
+                "members": [
+                    {
+                        "name": "Anu Salminen",
+                        "role": "Päiväkodin johtaja, varhaiskasvatuksen montessoriopettaja",
+                        "email": "anu.salminen@montessorikerava.fi",
+                        "extra": "Tavoitat Anun Kultaisista helmistä",
+                        "phone": "p. 050 304 7774"
+                    },
+                    {
+                        "name": "Sigrit Jõeleht",
+                        "role": "Varhaiskasvatuksen opettaja, apulaisjohtaja"
+                    },
+                    {
+                        "name": "Essi Haukkavaara",
+                        "role": "Varhaiskasvatuksen montessoriopettaja",
+                        "extra": "virkavapaalla 30.5.2026 asti"
+                    },
+                    {
+                        "name": "Heidi Kuusivuori",
+                        "role": "Varhaiskasvatuksen lastenhoitaja"
+                    }
+                ]
+            },
+            "form": {
+                "title": "Ota yhteyttä!",
+                "name": "Nimi *",
+                "email": "Sähköposti *",
+                "subject": "Aihe",
+                "message": "Viesti",
+                "required": "* Tähdellä merkityt kohdat ovat pakollisia.",
+                "submit": "LÄHETÄ LOMAKE",
+                "sending": "LÄHETETÄÄN...",
+                "success": "Viesti lähetetty!",
+                "error": "Virhe lähetyksessä."
+            }
+        },
         "footer": {
             "title": "Yhteystiedot",
             "subtitle": "Montessoripäiväkoti Mio",
@@ -295,6 +337,48 @@
                 "student": "Student",
                 "next": "Next Step →",
                 "prev": "← Previous"
+            }
+        },
+        "contact": {
+            "pedagogy": {
+                "text": "Montessori pedagogy is an ideologically independent educational method based on the educational thinking created by the Italian pedagogue and physician Maria Montessori (1870-1952). The Montessori method is used in schools and kindergartens around the world."
+            },
+            "staff": {
+                "title": "Staff",
+                "members": [
+                    {
+                        "name": "Anu Salminen",
+                        "role": "Daycare Director, Early Childhood Montessori Educator",
+                        "email": "anu.salminen@montessorikerava.fi",
+                        "extra": "You can reach Anu at Kultaiset helmet",
+                        "phone": "p. 050 304 7774"
+                    },
+                    {
+                        "name": "Sigrit Jõeleht",
+                        "role": "Early Childhood Educator, Assistant Director"
+                    },
+                    {
+                        "name": "Essi Haukkavaara",
+                        "role": "Early Childhood Montessori Educator",
+                        "extra": "on leave until May 30, 2026"
+                    },
+                    {
+                        "name": "Heidi Kuusivuori",
+                        "role": "Early Childhood Caregiver"
+                    }
+                ]
+            },
+            "form": {
+                "title": "Contact Us!",
+                "name": "Name *",
+                "email": "Email *",
+                "subject": "Subject",
+                "message": "Message",
+                "required": "* Fields marked with an asterisk are required.",
+                "submit": "SEND FORM",
+                "sending": "SENDING...",
+                "success": "Message sent!",
+                "error": "Error sending message."
             }
         },
         "footer": {
