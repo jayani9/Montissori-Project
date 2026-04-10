@@ -45,13 +45,15 @@
         },
         "footer": {
             "title": "Yhteystiedot",
-            "subtitle": "Tule tutustumaan meidän lämpimään ja virikkeelliseen ympäristöömme.",
-            "phone": "Puhelin",
-            "email": "Sähköposti",
-            "address": "Osoite",
-            "addressDetail": "Koulukatu 12, 00100 Helsinki",
-            "button": "Varaa vierailu →",
-            "rights": "Kaikki oikeudet pidätetään."
+            "subtitle": "Montessoripäiväkoti Mio",
+            "address": "Marttilankatu 12 E, 04260 Kerava",
+            "email": "info@montessorikerava.fi",
+            "phoneTitle": "Puhelin:",
+            "group1": "Värihelmet (2-4 -vuotiaat): 040 5272 456",
+            "group2": "Kultaiset helmet (4-6 -vuotiaat): 050 304 7774",
+            "hours": "Auki arkipäivisin klo 7-17",
+            "privacy": "Rekisteriseloste",
+            "association": "Yhdistys Association"
         }
     },
     "en": {
@@ -99,14 +101,16 @@
             ]
         },
         "footer": {
-            "title": "Contact Information",
-            "subtitle": "Come and visit our warm and stimulating environment.",
-            "phone": "Phone",
-            "email": "Email",
-            "address": "Address",
-            "addressDetail": "Koulukatu 12, 00100 Helsinki",
-            "button": "Book a visit →",
-            "rights": "All rights reserved."
+            "title": "Contact Details",
+            "subtitle": "Montessori Daycare Mio",
+            "address": "Marttilankatu 12 E, 04260 Kerava",
+            "email": "info@montessorikerava.fi",
+            "phoneTitle": "Phone:",
+            "group1": "Värihelmet (2-4 yrs): 040 5272 456",
+            "group2": "Kultaiset helmet (4-6 yrs): 050 304 7774",
+            "hours": "Open weekdays 7:00 - 17:00",
+            "privacy": "Privacy Policy",
+            "association": "Association"
         }
     }
 }
